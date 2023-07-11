@@ -3,7 +3,6 @@ package com.bikash
 import com.bikash.di.mainModule
 import io.ktor.server.application.*
 import com.bikash.plugins.*
-import org.koin.core.context.startKoin
 import org.koin.ktor.plugin.Koin
 
 fun main(args: Array<String>): Unit =
@@ -19,5 +18,4 @@ fun Application.module() {
     configureSerialization()
     configureMonitoring()
     configureSecurity()
-
 }
